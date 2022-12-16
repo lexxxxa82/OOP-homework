@@ -12,18 +12,31 @@ public class Human {
     }
 
     public String getName() {
+        if (name== null ||name.isEmpty()){
+            name = " информация не указана";
+        }
         return name;
     }
 
     public String getTown() {
+        if (town== null ||town.isEmpty()){
+            town = " информация не указана";
+        }
         return town;
     }
 
     public int getYearOfBirth() {
+        if (yearOfBirth<0) {
+            yearOfBirth = 0;
+        }
         return yearOfBirth;
-    }
+}
+
 
     public String getJobTitle() {
+        if (jobTitle== null ||jobTitle.isEmpty()){
+            jobTitle = " информация не указана";
+        }
         return jobTitle;
     }
 
